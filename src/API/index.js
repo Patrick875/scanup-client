@@ -1,6 +1,9 @@
+//jshint esversion:9
 import axios from "axios";
 import Cookie from "js-cookie";
-const instance = axios.create({ baseURL: "http://localhost:5000/api/v1" });
+const instance = axios.create({
+	baseURL: "https://silver-cockatoo-veil.cyclic.app/api/v1/",
+});
 
 instance.interceptors.response.use(
 	function (response) {
